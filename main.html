@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevBoard</title>
+    <!-- daisy ui and tailwind css cdn-->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- font Awsome-->
+ <script src="https://kit.fontawesome.com/2082a53414.js" crossorigin="anonymous"></script>
+
+ <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+</head>
+<body class="poppins-thin  sm:w-[80%] sm:mx-auto ">
+    <header class="mt-8 border-b-2 border-s-blue-400 md:border-hidden bg-white p-2 rounded-lg ">
+     <nav class="flex justify-between mb-3">
+        <!-- logo div -->
+        <div class="flex items-center gap-1">
+       <img src="/assets/logo.png" alt="">
+       <h1 class="text-xl text-gray-500">Dev<span class="text-gray-500 font-semibold">Board</span></h1>
+        </div>
+        <!-- tick mark and the button div -->
+
+
+           <!-- button -->
+           <div>
+  <button id="back-btn" class="bg-blue-700 text-white py-2 px-5 text-center rounded-lg  hover:bg-blue-400 hover:text-black">Back To Desk</button>
+           </div>
+        </div>
+       
+     </nav>
+  </header> 
+
+   <main class="border-t-2 border-gray-900">
+      <h1 class="font-bold text-2xl text-center mt-7">BLOCK</h1>
+      <p class="text-lg text-gray-500">1.What are the different ways to select an element in the DOM?</p>
+      <p  class="">1.By ID <br>2.By Class <br> 3.By Tag name <br> 4. CSS Selectors <br></p>
+      <p class="text-lg text-gray-500">2.What is the difference between innerHTML, innerText, and textContent ?</p>
+      <p>Use innerHTML when you need HTML formatting. <br>
+
+Use innerText when you want visible text only. <br>
+
+Use textContent when you want raw text quickly. <br></p>
+
+<p class="text-lg text-gray-500">3.What is event delegation in the DOM?</p>
+<p>Event delegation is a technique in JavaScript where you attach a single event listener to a parent element instead of adding separate listeners to multiple child elements. Then, inside the event handler, you check which child element triggered the event and handle it accordingly. <br> </p>
+<p class="text-lg text-gray-500">4. What is event bubbling in the DOM?</p>
+<p>vent bubbling is a behavior in the DOM where an event triggered on a child element “bubbles up” through its ancestors, triggering event listeners on parent elements as well. <br></p>
+<p class="text-lg text-gray-500">5. How do you create, add, and remove elements using JavaScript?</p>
+<p>createElement() only creates the element in memory; it’s not in the DOM until appended.
+
+appendChild() always adds at the end, insertBefore() lets you choose the position.
+
+remove() is simpler than removeChild(), but removeChild() is useful if you only have access to the parent. <br></p>
+
+
+   </main>
+
+  <script src="./Needed_j/backbtn.js"></script>
+</body>
+</html>
